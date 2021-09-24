@@ -1,0 +1,65 @@
+
+html{
+    font-size: 62.5%;
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+}
+
+body{
+    font-size: 2rem;
+    font-family: 'KoHo', sans-serif;
+    background-attachment: fixed;
+}
+
+/*LOGIN*/
+.login {
+    margin-top: 10rem;
+
+}
+
+.formLogin {
+    border: 1px solid #ebfaf4;
+    padding: 3rem;
+    font-size: 2rem;
+    box-shadow:2px 2px 5px #c7fce6;
+}
+
+/*NAV*/
+a.nav-link {
+    color: #39aa7b;
+}
+a.nav-link:hover {color:  #d4f0a1!important;} /*no lo toma*/
+
+/*REGISTRO*/
+
+.formRegistro  {
+    border: 1px solid #ebfaf4;
+    padding: 3rem;
+    font-size: 2rem;
+    box-shadow:2px 2px 5px #c7fce6;
+}
+.registro {
+    margin-top:10rem;
+}
+
+/*TITULO*/
+.titulo {
+    background-color: white;
+}
+
+
+/*PRODUCTOS*/
+.contenedor{
+    margin-top: 10rem; 
+}
+/*INDEX*/
+
+.tarjetaInicio {
+    text-decoration: none;
+    box-shadow:2px 2px 5px #dadccd;
+ }
+  .tituloCard {
+ color:#000000;
+ 
+ }
