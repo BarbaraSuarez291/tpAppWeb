@@ -13,7 +13,7 @@
 
 
 
-?>
+?> 
 <body>
   <div class="row registro">
     <div class="col-4"></div>
