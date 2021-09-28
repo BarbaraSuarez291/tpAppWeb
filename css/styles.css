@@ -1,5 +1,5 @@
 
-html{
+/* html{
     font-size: 62.5%;
     box-sizing: border-box;
     position: absolute;
@@ -13,27 +13,29 @@ body{
 }
 
 /*LOGIN*/
-.login {
+/* .login {
     margin-top: 10rem;
 
-}
+} */
 
-.formLogin {
+/* .formLogin {
     border: 1px solid #ebfaf4;
     padding: 3rem;
     font-size: 2rem;
     box-shadow:2px 2px 5px #c7fce6;
-}
+} */
+
+
 
 /*NAV*/
-a.nav-link {
+/* a.nav-link {
     color: #39aa7b;
 }
-a.nav-link:hover {color:  #d4f0a1!important;} /*no lo toma*/
+a.nav-link:hover {color:  #d4f0a1!important;} no lo toma */
 
 /*REGISTRO*/
 
-.formRegistro  {
+/* .formRegistro  {
     border: 1px solid #ebfaf4;
     padding: 3rem;
     font-size: 2rem;
@@ -41,25 +43,25 @@ a.nav-link:hover {color:  #d4f0a1!important;} /*no lo toma*/
 }
 .registro {
     margin-top:10rem;
-}
+} */
 
 /*TITULO*/
-.titulo {
+/* .titulo {
     background-color: white;
-}
+} */
 
 
 /*PRODUCTOS*/
-.contenedor{
+/* .contenedor{
     margin-top: 10rem; 
-}
+} */
 /*INDEX*/
 
-.tarjetaInicio {
+/* .tarjetaInicio {
     text-decoration: none;
     box-shadow:2px 2px 5px #dadccd;
- }
-  .tituloCard {
+ } */
+/* .tituloCard {
  color:#000000;
  
- }
+ } */ 

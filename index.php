@@ -23,9 +23,11 @@ if ($hayUsu != null) {
 </head>
 
 <body>
-  <!--<h1>Bienvenido ($usuario)<?php echo $usuario['nombre'] ?></h1>
-<h1>Bienvenido ($_POST) <?php echo $_POST['nombre'] ?></h1>-->
-  <h1>Bienvenido <?php echo $_SESSION['nombre'] ?></h1>
+  <!--<h1>Bienvenido ($usuario)<?php //echo $usuario['nombre'] ?></h1>
+<h1>Bienvenido ($_POST) <?php //echo $_POST['nombre'] ?></h1>-->
+  <!-- <h1>Bienvenido <?php 
+  // echo $_SESSION['nombre']
+   ?></h1>
 
 
 
@@ -49,7 +51,7 @@ if ($hayUsu != null) {
           </div>
           <div class="col">
             <div class="card border-light mb-3" style="max-width: 18rem;">
-              <a href="productos.php">
+              <a class="tarjetaInicio" href="productos.php">
                 <div class="card-body">
                   <img src="./img/ropaFoto.png" class="card-img-top" alt="...">
                   <div class="card-title">Productos</div>
@@ -86,9 +88,43 @@ if ($hayUsu != null) {
 
 
 
-  </div>
+  </div> -->
+    
+      <section class="index-userSection">
+      <h1 class="title-index">Welcome!</h1>
+        <div class="img-user">
+          <img id="img-user" src="./img/user.png" alt="">
+          <ul id="lista-userIndex" class="lista-user show-user">
+            <li class="activa">$nombre</li>
+            <li>Configuraciones</li>
+            <li>Cerrar sesion</li>
+          </ul>
+        </div>
+      </section>
 
+      <section class="contenedor seccion-cartas">
+        <div class="cartas-index">
+            <img src="./img/empleados.jpg" alt="">
+            <h3>Empleados</h3>
+            <p>12</p>
+        </div>
 
+        <div class="cartas-index">
+            <img src="./img/proveedores.jpg" alt="">
+            <h3>Proveedores</h3>
+            <p>6</p>
+        </div>
+
+        <div class="cartas-index">
+            <img src="./img/encargados2.jpg" alt="">
+            <h3>Encargados</h3>
+            <p>2</p>
+        </div>
+        
+
+      </section>
+
+<script src="./js/index.js"></script>
 </body>
 
 </html>
