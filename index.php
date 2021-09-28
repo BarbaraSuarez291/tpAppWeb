@@ -101,7 +101,7 @@ if ($hayUsu != null) {
           </ul>
         </div>
       </section>
-
+      <div class="barra-media"></div>
       <section class="contenedor seccion-cartas">
         <div class="cartas-index">
             <img src="./img/empleados.jpg" alt="">
