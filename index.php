@@ -7,7 +7,7 @@ if ($_POST != null) {
   crear_session_para_usu($usuario);
   /*$PRU=registrarUsuario($_POST);*/
 }
-?>
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 

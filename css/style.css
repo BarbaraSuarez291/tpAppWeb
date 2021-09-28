@@ -28,7 +28,7 @@ body {
 .barra-media::after{
     content: '';
     display: block;
-    width: 90rem;
+    width: 2rem;
     height: .2rem;
     background-color: #f5903e;
     margin: auto;
@@ -193,6 +193,7 @@ nav #icon{
     justify-content: space-around;
     margin: 12rem auto;
 }
+
 
 @media (max-width: 1048px){
     nav a{
