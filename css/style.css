@@ -28,7 +28,7 @@ body {
 .barra-media::after{
     content: '';
     display: block;
-    width: 90rem;
+    width: 2rem;
     height: .2rem;
     background-color: #f5903e;
     margin: auto;
