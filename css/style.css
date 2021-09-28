@@ -8,7 +8,7 @@
 }
 html {
     font-size:62.5%; /*CADA REM MIDE AHORA 10px*/
-    }
+}
 a{
     text-decoration: none;
     list-style: none;
@@ -35,8 +35,6 @@ body {
     margin-top: 5rem;
     margin-bottom: -2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-    
-   
 }
 /*NAVEGADOR*/
 .navegador-header {
@@ -87,7 +85,7 @@ nav #icon{
     font-size: 30px;
     margin-left: 4rem;
     cursor: pointer;
-   display: none;
+    display: none;
 }
 .navegador-footer{
     display: flex;
@@ -142,12 +140,12 @@ nav #icon{
     -ms-border-radius: 10px;
     -o-border-radius: 10px;
 }
-.show-user { 
+.show-user {
     position: absolute;
     z-index: -20;
     opacity: 0;
     height: 0;
-   
+    
 }
 .img-user li{
     font-size: 15px;
@@ -166,7 +164,7 @@ nav #icon{
     font-family: 'Ubuntu', sans-serif;
     font-size: 55px;
     max-width: 50%;
-    margin: auto;  
+    margin: auto;
     margin-top: 10rem;
 }
 .cartas-index img{
@@ -215,14 +213,14 @@ nav #icon{
         -moz-transition: 0.7s;
         -ms-transition: 0.7s;
         -o-transition: 0.7s;
-}
-     a.activa, a:hover{
+    }
+    a.activa, a:hover{
         border: none;
         color: #3498db;
     }
     .show{
-       width: 0!important;
-       margin-left: -50px!important;
+        width: 0!important;
+        margin-left: -50px!important;
     }
     .navegador-footer{
         justify-content: center;
@@ -248,9 +246,9 @@ nav #icon{
         line-height: 0;
         margin: 0;
         padding: 0;
-
+        
     }
-
+    
     /*INDEX*/
     .index-userSection{
         display: flex;
@@ -263,8 +261,7 @@ nav #icon{
         padding-bottom: 1rem!important;
     }
     #img-user{
-        width: 100px;
-        
+        width: 130px;
     }
     .img-user {
         display: flex;
@@ -277,18 +274,17 @@ nav #icon{
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
         padding-left: 0.8rem;
         cursor: pointer;
-         transition: 0.3s;
+        transition: 0.3s;
         -webkit-transition: 0.3s;
         -moz-transition: 0.3s;
         -ms-transition: 0.3s;
         -o-transition: 0.3s;
-}
-   .img-user li{
-       line-height: 5rem;
-   } 
+    }
+    .img-user li{
+        line-height: 5rem;
+    }
     .img-user li:hover {
         color: #f5903e;
-        
     }
     
 }
