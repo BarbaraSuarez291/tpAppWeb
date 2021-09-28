@@ -36,6 +36,17 @@ body {
     margin-bottom: -2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
+.barra-chica::after{
+    content: '';
+    display: block;
+    width: 30rem;
+    height: .1rem;
+    background-color: #f5903e;
+    margin: auto;
+    margin-top: 5rem;
+    margin-bottom: -2rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
 /*NAVEGADOR*/
 .navegador-header {
     display: flex;

@@ -29,7 +29,7 @@ if ($_POST != null) {
       <div class="img-user">
           <img id="img-user" src="./img/user.png" alt="">
           <ul id="lista-userIndex" class="lista-user show-user">
-            <li class="activa"> <a href="usuario.php"><?php echo $_SESSION['nombre'] ?></a></li>
+            <li class="activa"> <a href="usuario.php"><?php echo strtoupper($_SESSION['nombre']) ?></a></li>
             <li>Configuraciones</li>
             <li><a href="logout.php">Cerrar sesion</a></li>
           </ul>
