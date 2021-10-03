@@ -8,16 +8,21 @@
 
 <body>
 
-  <nav class="navegador-header">
-    <div id="icon">
+  <nav class="navegador-header h-icons">
+    <div id="icon" >
       <i class="fas fa-bars"></i>
+    </div>
+    <div>
+      <i id="icon-user-responsive" class="fas fa-user"></i>
     </div>
 
     <ul id="ul-lista" class="lista show">
       <li><a class="activa" href="index.php">Inicio</a></li>
       <?php if (!isset($_SESSION["nombre"])) : ?>
-        <li><a href="login.php">Ingresar</a></li>
-        <li><a href="registro.php">Registrarse</a></li>
+        <li id="icon-user"><i class="fas fa-user"></i></li>
+        <!-- <li><a href="login.php">Ingresar</a></li>
+        <li><a href="registro.php">Registrarse</a></li> -->
+        
       <?php endif; ?>
       <?php if (isset($_SESSION["nombre"])) : ?>
 
@@ -48,7 +53,7 @@
 
   </nav>
   <script src="./js/nav.js"></script>
-
+  
 
 </body>
 
