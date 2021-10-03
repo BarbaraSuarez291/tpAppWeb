@@ -178,6 +178,11 @@ nav #icon{
     -ms-transition: 3s;
     -o-transition: 3s;
 }
+.show-userOrange {
+    position:absolute;
+    z-index: -20;
+    opacity: 0;
+}
 .img-user li{
     font-size: 15px;
     
@@ -191,6 +196,7 @@ nav #icon{
     color: black;
 }
 .lista-user a:hover{
+    border: none;
     color:#f5903e;
 }
 .activa {
@@ -225,7 +231,9 @@ nav #icon{
 .lista-user li:first-of-type {
       font-size: 13px;
       font-weight: bold;
-      
+  }
+  #nombreUserIndex{
+      color: #f5903e;
   }
 
   ul.ul-ingreso {
