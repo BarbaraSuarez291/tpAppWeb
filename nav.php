@@ -13,11 +13,15 @@
       <i class="fas fa-bars"></i>
     </div>
     <div>
+      <?php 
+        if(!isset($_SESSION["nombre"])) : ?>
       <i id="icon-user-responsive" class="fas fa-user"></i>
+          
+      <?php endif; ?>
     </div>
 
     <ul id="ul-lista" class="lista show">
-      <li><a class="activa" href="index.php">Inicio</a></li>
+      <li><a id="inicioNavbar" class="activa" href="index.php">Inicio</a></li>
       <?php if (!isset($_SESSION["nombre"])) : ?>
         <li id="icon-user"><i class="fas fa-user"></i></li>
         <!-- <li><a href="login.php">Ingresar</a></li>
@@ -33,6 +37,11 @@
 
   <?php endif; ?>
   </nav>
+
+          <ul id="ulNavLog" class="ul-ingreso show-user">
+            <li><a href="login.php">Ingresar</a></li>
+            <li><a href="registro.php"> Registrarse</a></li>
+          </ul>
 
 
 
