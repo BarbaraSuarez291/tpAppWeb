@@ -16,27 +16,30 @@
 ?>
 
 <body>
-  <div class="row registro">
-    <div class="col-4"></div>
-    <div class="col-4">
-      <form action="index.php" method="post" class="form-horizontal formRegistro">
-        <div class="mb-3">
-          <label for="nombre" class="form-label">Nombre</label>
-          <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Juan">
-        </div>
+    <section>
+      <div class="form-registro">
+        <h2>Registrate</h2>
+        <form action="index.php">
+          <div class="nameSignUp">
+            <input class="input" type="text" placeholder="Nombre">
+            <input class="input" type="text" placeholder="apellido">
+          </div>
+          
+          <input class="input" type="email" placeholder="email">
+          
+          <input class="input" type="password" placeholder="password">
 
-        <div class="mb-3">
-          <label for="email" class="form-label">Email</label>
-          <input type="email" class="form-control" id="email" name="email" placeholder="name@example.com">
-        </div>
-        <div class="mb-3">
-          <input type="password" class="form-control" id="password" name="password" placeholder="123123">
-        </div>
-        <div><input class="btn btn-outline-success" type="submit" value="Registrarse"></div>
-      </form>
-    </div>
-    <div class="col-4"></div>
-  </div>
+          <input class="input" type="password" placeholder=" confirme password">
+      
+    
+
+        </form>
+          <div class="botones-link">
+            <a href="#">Ya tengo cuenta</a>
+            <a class="activa-link" href="#">Registrarse</a>
+          </div>
+      </div>
+    </section>
 </body>
 
 </html>
