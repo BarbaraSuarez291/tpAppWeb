@@ -7,19 +7,10 @@ if ($_POST != null) {
   crear_session_para_usu($usuario);
   /*$PRU=registrarUsuario($_POST);*/
 }
+
+  include("./includes/header.php");
  ?>
-<!DOCTYPE html>
-<html lang="en">
 
-<head>
-
-  <?php
-  require('plantilla.php');
-  ?>
-  <title>Inicio</title>
-</head>
-
-<body>
 
   </div>
 
@@ -58,7 +49,4 @@ if ($_POST != null) {
 
       </section>
 
-<script src="./js/index.js"></script>
-</body>
-
-</html>
+<?php include("./includes/footer.php");?>

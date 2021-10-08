@@ -1,21 +1,9 @@
 <?php
-
-?>
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-  <?php include_once('./plantilla.php ');
-  ?>
-  <title>Registro</title>
-</head>
-<?php
-
-
-
+    include("./includes/header.php");
 ?>
 
-<body>
+
+
     <section>
       <div class="form-registro">
         <h2>Registrate</h2>
@@ -26,20 +14,34 @@
           </div>
           
           <input class="input" type="email" placeholder="email">
-          
-          <input class="input" type="password" placeholder="password">
 
-          <input class="input" type="password" placeholder=" confirme password">
-      
-    
+          <div class="nameSignUp">
+            <input class="input" type="password" placeholder="password">
+
+            <input class="input" type="password" placeholder=" confirme password">
+          </div>
+          
+
+          <label for="radio" class="d-block fontz-15 text-center">¿Eres Encargado o Empleado?</label>
+          <div class="d-flex section-radio">
+            <div class="radio">
+              <p>Encargado</p>
+              <input type="radio" name="radio">
+            </div>
+            <div class="radio">
+              <p>Empleado</p>
+              <input type="radio" name="radio">
+            </div>
+          </div>      
+
+          <div class="botones-link">
+            <a href="login.php">Ya tengo cuenta</a>
+            <button class="activa-link">Registrarse</button>
+          </div>
 
         </form>
-          <div class="botones-link">
-            <a href="#">Ya tengo cuenta</a>
-            <a class="activa-link" href="#">Registrarse</a>
-          </div>
+          
       </div>
     </section>
-</body>
 
-</html>
+    <?php include("./includes/footer.php");?>

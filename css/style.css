@@ -16,6 +16,8 @@ a{
     list-style: none;
 }
 
+
+
 h2,h3,h4,h5{
     font-family: 'Nunito', sans-serif;
 
@@ -44,7 +46,9 @@ body {
     margin-bottom: -2rem;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
-
+.fontz-15{
+    font-size: 14px;
+}
 /*NAVEGADOR*/
 .navegador-header {
     display: flex;
@@ -289,7 +293,7 @@ nav #icon{
     border: none;
     font-size: 17px;
 }
-.form-registro , form {
+.form-registro , .form-login,  form {
     display: flex;
     flex-direction: column;
     
@@ -298,6 +302,21 @@ nav #icon{
 .form-registro {
     width: 400px;
     height: 42rem;
+    line-height: 3rem;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 10rem;
+    border: solid 1px #34495e4d;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+}
+
+.form-login{
+    width: 400px;
+    height: 35rem;
     line-height: 3rem;
     margin: auto;
     margin-top: 5rem;
@@ -330,7 +349,7 @@ form input{
     border-bottom: 2px solid #3498db;
 }   
 
-.form-registro h2{
+.form-registro h2, .form-login h2{
     text-align: center;
     margin:2rem auto;
 }
@@ -338,17 +357,36 @@ form input{
     display: flex;
     flex-direction: row;
 }
+.section-radio input{
+    margin: 0 auto;
+    
+}
+.section-radio{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 1.8rem;
+}
+.radio{
+    display: flex;
+    align-items: center;
+    
+}
+.radio p{
+    margin: 0 .9rem;
+}
 .botones-link {
     display: flex;
     justify-content: space-around;
     margin-top: 1.2rem;
 }
 
-.botones-link a {
+.botones-link button , .botones-link a{
     color: #3498db;
     font-weight: 600;
     transition: 0.3s;
     padding: 0 1.2rem;
+    border: none;
+    outline: none;
     border-radius: 11px;
     -webkit-border-radius: 11px;
     -moz-border-radius: 11px;
@@ -359,14 +397,24 @@ form input{
     -ms-transition: 0.3s;
     -o-transition: 0.3s;
 }
-.botones-link a:hover {
+.botones-link button:hover {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    outline: none;
+}
+
+.botones-link a:hover{
     background-color: #3498db;
     color: white;
     
-    
+
 
 }
 
+.login-btn{
+    margin-top: 8rem;
+}
 
 @media (max-width: 1048px){
     nav a{
@@ -448,6 +496,12 @@ form input{
 
 
 @media (max-width: 640px) {
+    p{
+        font-size: 15px;
+    }
+    h2{
+        max-width: fit-content;
+    }
     .navegador-footer a{
         font-size: 10px;
         
@@ -514,5 +568,34 @@ form input{
         flex-direction: column;
         
     }
-}
 
+    .form-registro{
+        border: none;
+        height: 100%;
+        width: 100vw;
+    }
+    .nameSignUp{
+        display: block;
+        
+    }
+    .nameSignUp input, input{
+        width: 60%;
+    }
+    .section-radio{
+        flex-direction: column;
+    }
+    .radio{
+        justify-content: center;
+    }
+    .radio input{
+        width: min-content;
+        margin: .5rem;
+        
+    }
+    .botones-link{
+        flex-direction: column;
+        align-items: center;
+    }
+    
+
+}
