@@ -130,7 +130,7 @@ nav #icon{
     justify-content: center;
     align-items: center;
     height: 6rem;
-    width: 100%;
+    width: 100vw;
     background-color: #34495e;
     position: fixed;
     bottom: 0;
@@ -300,7 +300,7 @@ nav #icon{
     
 }
 .form-registro {
-    width: 400px;
+    width: 450px;
     height: 50rem;
     line-height: 3rem;
     margin: auto;
@@ -316,8 +316,8 @@ nav #icon{
 
 .form-login{
     width: 400px;
-    height: 35rem;
-    line-height: 3rem;
+    height: 40rem;
+    line-height: 5rem;
     margin: auto;
     margin-top: 5rem;
     margin-bottom: 10rem;
@@ -333,7 +333,7 @@ form input{
     margin: 2rem 1.8rem;
     border: none;
     outline: none;
-    font-size: 13px;
+    font-size: 15px;
     
 }
 
@@ -384,6 +384,7 @@ form input{
 .botones-link button , .botones-link a{
     color: #3498db;
     font-weight: 600;
+    font-size: 15px;
     transition: 0.3s;
     padding: 0 1.2rem;
     border: none;
@@ -414,7 +415,7 @@ form input{
 }
 
 .login-btn{
-    margin-top: 8rem;
+    margin-top: 6rem;
 }
 
 @media (max-width: 1048px){
@@ -503,6 +504,9 @@ form input{
     h2{
         max-width: fit-content;
     }
+    .navegador-header{
+        overflow: hidden;
+    }
     .navegador-footer a{
         font-size: 10px;
         
@@ -570,10 +574,11 @@ form input{
         
     }
 
-    .form-registro{
+    .form-registro, .form-login{
         border: none;
         height: 100%;
         width: 100vw;
+        
     }
     .nameSignUp{
         display: block;
@@ -581,6 +586,9 @@ form input{
     }
     .nameSignUp input, input{
         width: 60%;
+    }
+    .form-login input{
+        margin: 2rem auto;
     }
     .section-radio{
         flex-direction: column;
@@ -600,6 +608,17 @@ form input{
     .botones-link{
         flex-direction: column;
         align-items: center;
+    }
+    .form-registro {
+        margin-top: 1.5rem;
+    }
+    .login-btn button{
+        margin-top: 1.4rem;
+        font-size: 16px;
+        padding: .3rem .6rem;
+    }
+    .login-btn a{
+        font-size: 12px;
     }
     
 
