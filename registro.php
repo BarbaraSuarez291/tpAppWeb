@@ -34,7 +34,7 @@
             </div>
           </div>      
 
-          <div class="botones-link">
+          <div class="botones-link fontz-15">
             <a href="login.php">Ya tengo cuenta</a>
             <button class="activa-link">Registrarse</button>
           </div>

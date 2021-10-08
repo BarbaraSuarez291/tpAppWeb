@@ -301,7 +301,7 @@ nav #icon{
 }
 .form-registro {
     width: 400px;
-    height: 42rem;
+    height: 50rem;
     line-height: 3rem;
     margin: auto;
     margin-top: 2rem;
@@ -372,12 +372,13 @@ form input{
     
 }
 .radio p{
-    margin: 0 .9rem;
+    font-size: 13px;
+    margin: 3rem .9rem;
 }
 .botones-link {
     display: flex;
     justify-content: space-around;
-    margin-top: 1.2rem;
+    margin-top: 0.4rem;
 }
 
 .botones-link button , .botones-link a{
@@ -591,6 +592,10 @@ form input{
         width: min-content;
         margin: .5rem;
         
+    }
+    .radio p{
+        font-size: 14px;
+        margin: .3rem ;
     }
     .botones-link{
         flex-direction: column;
