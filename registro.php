@@ -9,16 +9,26 @@
         <h2>Registrate</h2>
         <form action="index.php">
           <div class="nameSignUp">
-            <input class="input" type="text" placeholder="Nombre">
-            <input class="input" type="text" placeholder="apellido">
+
+            <input id="NameSignUp"class="input" type="text" placeholder="Nombre">
+            <p id="errName"></p>
+
+            <input id="lastNameSignUp" class="input" type="text" placeholder="apellido">
+            <p id="errLastName"></p>
+
           </div>
           
-          <input class="input" type="email" placeholder="email">
+            <input id="emailSignUp" class="input" type="email" placeholder="email">
+            <p id="errEmail"></p>
 
           <div class="nameSignUp">
-            <input class="input" type="password" placeholder="password">
 
-            <input class="input" type="password" placeholder=" confirme password">
+            <input id="passwordSignUp" class="input" type="password" placeholder="password">
+            <p id="errPassword"></p>
+
+            <input id="passwordConfirmSignUp" class="input" type="password" placeholder=" confirme password">
+            <p id="errPasswordConfirm"></p>
+
           </div>
           
 
