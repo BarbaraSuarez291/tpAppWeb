@@ -32,33 +32,41 @@ if ($_POST != null) {
     <form action="#" method="POST">
       <!-- NOMBRE -->
       <div class="nameSignUp">
-        <input id="NameSignUp" class="input" type="text" placeholder="Nombre" name="nombre" value="<?= isset($_POST["nombre"]) ? $_POST["nombre"] : '' ?>">
-        <p id="errName"></p>
-        <?php if (isset($errores["nombre"])) : ?>
-          <p id="errName" style="color:red; font-size:12px;"><?= $errores["nombre"] ?></p>
-        <?php endif; ?>
+        <div class="err-input">
+          <input id="nameSignUp" class="input" type="text" placeholder="Nombre" name="nombre" value="<?= isset($_POST["nombre"]) ? $_POST["nombre"] : '' ?>">
+          <p id="errName" class="err-alert"></p>
+        </div>
+        
 
 
         <!-- APELLIDO -->
-        <input id="lastNameSignUp" class="input" type="text" placeholder="apellido" name="apellido" value="<?= isset($_POST["apellido"]) ? $_POST["apellido"] : '' ?>">
-        <p id="errLastName"></p>
+        <div class="err-input">
+          <input id="lastNameSignUp" class="input" type="text" placeholder="apellido" name="apellido" value="<?= isset($_POST["apellido"]) ? $_POST["apellido"] : '' ?>">
+          <p id="errLastName" class="err-alert"></p>
+        </div>
       </div>
 
 
       <!-- EMAIL -->
-      <input id="emailSignUp" class="input" type="email" placeholder="email" name="email" value="<?= isset($_POST["email"]) ? $_POST["email"] : '' ?>">
-      <p id="errEmail"></p>
+      <div class="err-input">
+        <input id="emailSignUp" class="input" type="email" placeholder="email" name="email" value="<?= isset($_POST["email"]) ? $_POST["email"] : '' ?>">
+        <p id="errEmail" class="err-alert"></p>
+      </div>
       <div class="nameSignUp">
 
 
         <!-- CONTRASEÑA -->
-        <input id="passwordSignUp" class="input" type="password" placeholder="password" name="password" value="<?= isset($_POST["password"]) ? $_POST["password"] : '' ?>">
-        <p id="errPassword"></p>
+        <div class="err-input">
+          <input id="passwordSignUp" class="input" type="password" placeholder="password" name="password" value="<?= isset($_POST["password"]) ? $_POST["password"] : '' ?>">
+          <p id="errPassword" class="err-alert"></p>
+        </div>
 
 
         <!-- REPETIR CONTRASEÑA -->
-        <input id="passwordConfirmSignUp" class="input" type="password" placeholder=" confirme password" name="passwordConfirm" value="<?= isset($_POST["passwordConfirm"]) ? $_POST["passwordConfirm"] : '' ?>">
-        <p id="errPasswordConfirm"></p>
+        <div class="err-input">
+          <input id="passwordConfirmSignUp" class="input" type="password" placeholder=" confirme password" name="passwordConfirm" value="<?= isset($_POST["passwordConfirm"]) ? $_POST["passwordConfirm"] : '' ?>">
+          <p id="errPasswordConfirm" class="err-alert"></p>
+        </div>
 
       </div>
 
