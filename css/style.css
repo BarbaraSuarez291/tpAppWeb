@@ -418,6 +418,17 @@ form input{
     margin-top: 6rem;
 }
 
+.err-alert{
+    color: red;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 20px;
+}
+.err-input{
+    display: flex;
+    flex-direction: column;
+}
+
 @media (max-width: 1048px){
     nav a{
         font-size: 17px;

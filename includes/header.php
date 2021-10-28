@@ -21,7 +21,7 @@
 
   ?>
   <link rel="stylesheet" href="css/style.css">
-
+  
 
   <title>Inicio</title>
 </head>
