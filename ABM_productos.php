@@ -3,7 +3,7 @@
 
 $consulta = "SELECT * FROM `products`";
 $resultado = mysqli_query($conexion, $consulta) or die(mysqli_error($conexion) . ' error NO SE PUDO REALIZR LA CONSULTA');
-$result = consulta_a_db($consulta, $conexion);
+//$result = consulta_a_db($consulta, $conexion);
 
 
 
