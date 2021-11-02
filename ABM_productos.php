@@ -41,10 +41,13 @@ $resultado = mysqli_query($conexion, $consulta) or die(mysqli_error($conexion) .
                     <h3>Stock total</h3>
                 </td>
                 <td>
-                   
+
                 </td>
                 <td>
-                    
+
+                </td>
+                <td>
+
                 </td>
             </tr>
         </thead>
@@ -79,7 +82,7 @@ $resultado = mysqli_query($conexion, $consulta) or die(mysqli_error($conexion) .
 
                     <div> <?php echo "  <td> <a  class='btn btn-secondary' href='modificarCantidadesProducto.php?id=" . $fila['id'] . "'>Actualizar Stock</a>  </td>" ?>
 
-
+                    <?php echo "  <td> <a  class='btn btn-secondary' href='editarProducto.php?id=" . $fila['id'] . "'>Editar</a>  </td>" ?>
 
                         <?php echo "  <td> <a  class='btn btn-secondary' href='eliminarProducto.php?id=" . $fila['id'] . "'>Eliminar</a>  </td>" ?>
 

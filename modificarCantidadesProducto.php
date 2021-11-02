@@ -3,7 +3,7 @@
 include("./includes/header.php");
 include('modif_cant_sql.php');
 if (isset($_GET['id'])) {
-    $id = $_GET['id'];
+    $id =  $_GET['id'];
     $query = "SELECT * FROM `products` WHERE id=$id";
     $resultado = mysqli_query($conexion, $query) or die(mysqli_error($conexion) . ' error NO SE PUDO REALIZR LA CONSULTA');
 }
@@ -73,7 +73,7 @@ if (isset($_POST['resta'])) {
 
 
 ?>
-
+<!--
 <div>
     <table class="table table-dark table-hover table-bordered ">
         <thead>
@@ -143,8 +143,11 @@ if (isset($_POST['resta'])) {
         </tbody>
     </table>
 </div>
+-->
 
 </div>
+
+<div class="form-registro">
 <h2>Modificar Unidades</h2>
 <div class="container" style="margin-top:1.5rem;font-size:1.3rem;">
     <?php if ($error == true) : ?>
@@ -169,8 +172,10 @@ if (isset($_POST['resta'])) {
     </div>
 
     <div><button type="submit" name="suma" class="btn btn-primary">Agregar unidades</button></div>
-    <br>
+  
     <div><button type="submit" name="resta" class="btn btn-primary">Restar unidades</button></div>
 
 </Form>
-<a href="ABM_productos.php" class="btn btn-primary">Volver</a>
+     <a href="ABM_productos.php" class="btn btn-primary">Volver</a>
+
+</div>
