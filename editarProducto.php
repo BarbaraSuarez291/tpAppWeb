@@ -14,26 +14,29 @@ $error = false;
 if (isset($_POST['updatee'])) {
     $name='--';
     $codigo = '--';
-    $description = '--'; 
-    $price = '--'; 
+    $description = '--';
+    $price = '--';
 
-     $name = $_POST['name'];
-     $codigo = $_POST['codigo'];
-     $description = $_POST['description'];
-     $price = $_POST['price'];
-     if (empty( $name) || empty($codigo) || empty($description) || empty($price)){
+    $name = $_POST['name'];
+    $codigo = $_POST['codigo'];
+    $description = $_POST['description'];
+    $price = $_POST['price'];
+    if (empty( $name) || empty($codigo) || empty($description) || empty($price)){
 
             $error = true;
             $message= "Alguno de los campos se encontraba vacio. Vuelva a intentarlo nuevamente.";
     } else {
         updateProducto($name, $codigo,$description, $price, $id, $conexion);
     }
-    
+
 }
 
 
 ?>
-<div>
+<div class="row">
+<div class="col-2"></div>
+<div class="col-8">
+<div class="container fluid" Style="padding-top:30px">
     <h2>Modificar datos de producto</h2>
     <div class="container" style="margin-top:1.5rem;font-size:1.3rem;">
         <?php if ($error == true) : ?>
@@ -43,7 +46,7 @@ if (isset($_POST['updatee'])) {
             </div>
         <?php endif; ?>
     </div>
-    <table class="table table-dark table-hover table-bordered ">
+    <table class="table table-hover table-bordered ">
 
         <thead>
             <tr>
@@ -83,11 +86,11 @@ if (isset($_POST['updatee'])) {
                         </td>
                         <td>
 
-                        <button type="submit" name="updatee" class="btn btn-primary">Modificar</button>
+                        <button type="submit" name="updatee" class="btn btn-warning">Modificar</button>
                         </td>
                         <td>
 
-                            <a href="ABM_productos.php" class="btn btn-primary">Volver</a>
+                            <a href="ABM_productos.php" class="btn btn-secondary">Volver</a>
                         </td>
 
                         </td>
@@ -105,8 +108,9 @@ if (isset($_POST['updatee'])) {
     </table>
 
 </div>
-
-</div>
+            </div>
+            <div class="col-2"></div>
+            </div>
 
 
 <?php  } ?>

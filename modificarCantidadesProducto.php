@@ -73,109 +73,65 @@ if (isset($_POST['resta'])) {
 
 
 ?>
-<!--
-<div>
-    <table class="table table-dark table-hover table-bordered ">
-        <thead>
-            <tr>
-                <td>
-                    <h3> ID </h3>
-                </td>
-                <td>
-                    <h3> Producto </h3>
-                </td>
-                <td>
-                    <h3>Codigo </h3>
-                </td>
-                <td>
-                    <h3>Descripcion </h3>
-                </td>
-                <td>
-                    <h3> Precio</h3>
-                </td>
-                <td>
-                    <h3>Cantidad Talle S</h3>
-                </td>
-                <td>
-                    <h3>Cantidad Talle M</h3>
-                </td>
-                <td>
-                    <h3>Cantidad Talle L</h3>
-                </td>
-                <td>
-                    <h3>Stock total</h3>
-                </td>
+<div class="row">
+    <div class="col-2"></div>
+    <div class="col-8 container fluid" style="padding-top:30px;">
 
-            </tr>
-        </thead>
-        <tbody>
-            <?php
 
-            while ($fila = mysqli_fetch_array($resultado)) { ?>
+        <h2>Modificar Unidades</h2>
+        <table class="table table-hover table-bordered ">
+
+            <thead>
                 <tr>
-                    <td> <?php echo  $fila['id'] ?>
-                    </td>
-                    <td> <?php echo  $fila['name'] ?>
-                    </td>
-                    <td><?php echo $fila['product_code'] ?>
-                    </td>
-                    <td><?php echo $fila['description'] ?>
-                    </td>
-                    <td><?php echo $fila['price'] ?>
-                    </td>
-                    <td><?php echo $fila['cantidad_talle_s'] ?>
-                    </td>
 
-                    <td><?php echo $fila['cantidad_talle_m'] ?>
+                    <td>
+                        <h3> Unidades talle S </h3>
                     </td>
-
-                    <td><?php echo $fila['cantidad_talle_l'] ?>
+                    <td>
+                        <h3> Unidades talle M </h3>
                     </td>
-
-                    <td><?php echo $fila['cantidad_total'] ?>
+                    <td>
+                        <h3> Unidades talle L </h3>
                     </td>
+                    <td>
 
+                    </td>
+                    <td>
+                    </td>
+                    <td>
+                    </td>
 
                 </tr>
+            </thead>
+            <tbody>
+                <div class="container" style="margin-top:1.5rem;font-size:1.3rem;">
+                    <?php if ($error == true) : ?>
+                        <div class="alert alert-danger alert-dismissible fade show" role="alert">
+                            <strong><?php echo $message; ?></strong>
+                            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                        </div>
+                    <?php endif; ?>
+                </div>
+                <Form action="#" method="post">
+                    <tr>
+                        <td> <input type="text" name="s" value="0">
+                        </td>
+                        <td> <input type="text" name="m" value="0">
+                        </td>
+                        <td><input type="text" name="l" value="0">
+                        </td>
 
-            <?php } ?>
+                        <td> <button type="submit" name="suma" class="btn btn-warning">Agregar unidades</button></td>
+                        <td><button type="submit" name="resta" class="btn btn-warning">Restar unidades</button></td>
 
-        </tbody>
-    </table>
-</div>
--->
 
-</div>
+                </Form>
+                <td> <a href="ABM_productos.php" class="btn btn-secondary">Volver</a></td>
 
-<div class="form-registro">
-<h2>Modificar Unidades</h2>
-<div class="container" style="margin-top:1.5rem;font-size:1.3rem;">
-    <?php if ($error == true) : ?>
-        <div class="alert alert-danger alert-dismissible fade show" role="alert">
-            <strong><?php echo $message; ?></strong>
-            <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
-        </div>
-    <?php endif; ?>
-</div>
-<Form action="#" method="post">
-    <div class="mb-3">
-        <label for="s">Unidades talle S</label>
-        <input type="text" id="s" name="s" value="0">
+                </tr>
+            </tbody>
+        </table>
+
     </div>
-    <div class="mb-3">
-        <label for="m">Unidades talle M</label>
-        <input type="text" id="m" name="m" value="0">
-    </div>
-    <div class="mb-3">
-        <label for="l">Unidades talle L</label>
-        <input type="text" id="l" name="l" value="0">
-    </div>
-
-    <div><button type="submit" name="suma" class="btn btn-primary">Agregar unidades</button></div>
-  
-    <div><button type="submit" name="resta" class="btn btn-primary">Restar unidades</button></div>
-
-</Form>
-     <a href="ABM_productos.php" class="btn btn-primary">Volver</a>
-
+    <div class="col-2"></div>
 </div>

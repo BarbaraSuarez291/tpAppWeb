@@ -3,14 +3,20 @@
 
 $consulta = "SELECT * FROM `products`";
 $resultado = mysqli_query($conexion, $consulta) or die(mysqli_error($conexion) . ' error NO SE PUDO REALIZR LA CONSULTA');
-//$result = consulta_a_db($consulta, $conexion);
+
 
 
 
 ?>
-
 <div>
-    <table class="table table-dark table-hover table-bordered">
+<div class="row">
+<div class="col-2"> </div>
+<div class="col-8">
+
+
+
+<div class="container fluid" Style="padding-top:30px">  
+    <table class="table  table-hover table-bordered">
         <thead>
             <tr>
                 <td>
@@ -80,22 +86,31 @@ $resultado = mysqli_query($conexion, $consulta) or die(mysqli_error($conexion) .
 
 
 
-                    <div> <?php echo "  <td> <a  class='btn btn-secondary' href='modificarCantidadesProducto.php?id=" . $fila['id'] . "'>Actualizar Stock</a>  </td>" ?>
+                    <div> <?php echo "  <td> <a  class='btn btn-warning' href='modificarCantidadesProducto.php?id=" . $fila['id'] . "'>Actualizar Stock</a>  </td>" ?>
 
-                    <?php echo "  <td> <a  class='btn btn-secondary' href='editarProducto.php?id=" . $fila['id'] . "'>Editar</a>  </td>" ?>
+                    <?php echo "  <td> <a  class='btn btn-warning' href='editarProducto.php?id=" . $fila['id'] . "'>Editar</a>  </td>" ?>
 
-                        <?php echo "  <td> <a  class='btn btn-secondary' href='eliminarProducto.php?id=" . $fila['id'] . "'>Eliminar</a>  </td>" ?>
+                        <?php echo "  <td> <a  class='btn btn-danger' href='eliminarProducto.php?id=" . $fila['id'] . "'>Eliminar</a>  </td>" ?>
 
 
                 </tr>
 
             <?php } ?>
-            <a href="agregarProducto.php" class="btn btn-primary">Nuevo producto</a>
+
         </tbody>
     </table>
 </div>
 
+</div>
+<div class="col-2">   </div>
+</div>
+<div class="row">
+    <div class="col-4"></div>
+    <div class="col-5"></div>
+    <div class="col-3"> <a href="agregarProducto.php" class="btn btn-success">Nuevo producto</a></div>
+</div>
 
+            </div>
 
 
 
