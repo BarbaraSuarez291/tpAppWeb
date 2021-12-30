@@ -20,6 +20,7 @@ if (isset($_POST['email']) && isset($_POST['password'])) {
 
 
 ?>
+<head><title>Ingreso</title> </head>
 <section>
   <div class="container" style="margin-top:1.5rem;font-size:1.3rem;">
     <?php if ($error == true) : ?>

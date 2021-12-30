@@ -21,9 +21,8 @@
 
   ?>
   <link rel="stylesheet" href="css/style.css">
-  
 
-  <title>Inicio</title>
+
 </head>
 
 <body>
@@ -41,7 +40,7 @@
     </div>
 
     <ul id="ul-lista" class="lista show">
-      <li><a id="inicioNavbar" class="activa" href="index.php">Inicio</a></li>
+      <li><a id="inicioNavbar" class="" href="index.php">Inicio</a></li>
       <?php if (!isset($_SESSION["nombre"])) : ?>
         <li id="icon-user"><i class="fas fa-user"></i></li>
         <!-- <li><a href="login.php">Ingresar</a></li>
@@ -49,15 +48,17 @@
 
       <?php endif; ?>
       <?php if (isset($_SESSION["nombre"])) : ?>
+        <?php if ($_SESSION["rol"] == '1') : ?>
+          <li><a href="productos.php">Productos</a></li>
+          <li><a href="#">Usuarios</a></li>
 
-        <li><a href="productos.php">Productos</a></li>
-        <li><a href="#">Clientes</a></li>
-        <li><a href="#">Proveedores</a></li>
+        <?php else : ?>
+          <li><a href="productos.php">Productos</a></li>
+
     </ul>
-
   <?php endif; ?>
+<?php endif; ?>
   </nav>
-
   <ul id="ulNavLog" class="ul-ingreso show-user">
     <li><a href="login.php">Ingresar</a></li>
     <li><a href="registro.php"> Registrarse</a></li>

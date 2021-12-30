@@ -11,22 +11,17 @@ $error = false;
 
 
 
-if (isset($_POST['updatee'])) {
-    $name='--';
-    $codigo = '--';
-    $description = '--';
-    $price = '--';
+if (isset($_POST['updatee'])&& !empty($_POST)) {
 
-    $name = $_POST['name'];
-    $codigo = $_POST['codigo'];
-    $description = $_POST['description'];
-    $price = $_POST['price'];
-    if (empty( $name) || empty($codigo) || empty($description) || empty($price)){
+    $name = trim($_POST['name']);
+    $description = trim($_POST['description']);
+    $price = trim($_POST['price']);
+    if (empty( $name) ||  empty($description) || empty($price)){
 
             $error = true;
-            $message= "Alguno de los campos se encontraba vacio. Vuelva a intentarlo nuevamente.";
+            $message= "Alguno de los campos se encontraba vacio. Verifique y vuelva a intentarlo nuevamente.";
     } else {
-        updateProducto($name, $codigo,$description, $price, $id, $conexion);
+        updateProducto($name, $description, $price, $id, $conexion);
     }
 
 }
@@ -76,13 +71,14 @@ if (isset($_POST['updatee'])) {
             while ($fila = mysqli_fetch_array($resultado)) { ?>
                 <Form action="#" method="post">
                     <tr>
-                        <td> <input type="text"  name="name" value=" <?php echo  $fila['name'] ?>">
+                        <td> <input type="text"  name="name" value="<?php echo  $fila['name']?>">
                         </td>
-                        <td> <input type="text"  name="codigo" value=" <?php echo  $fila['product_code'] ?>">
+                        <td> <p ><?php echo  $fila['product_code'] ?></p>
+
                         </td>
-                        <td><input type="text"  name="description" value=" <?php echo  $fila['description'] ?>">
+                        <td><input type="text"  name="description" value="<?php echo  $fila['description']?>">
                         </td>
-                        <td> <input type="text"  name="price" value=" <?php echo $fila['price'] ?>">
+                        <td> <input type="text"  name="price" value="<?php echo $fila['price'] ?>">
                         </td>
                         <td>
 

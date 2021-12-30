@@ -7,8 +7,9 @@ if ($_POST != null) {
   $usuario = datosDeNuevoUsuario($_POST);
   $existeEmail = existeUsuario($usuario['email'], $conexion);
   if ($existeEmail == false) {
-    crear_session_para($usuario);
     registrarUsuario($usuario, $conexion);
+    crear_session_para($usuario, $id);
+
     header('Location:index.php');
   }
 }
@@ -16,7 +17,9 @@ if ($_POST != null) {
 
 ?>
 
-
+<head >
+  <title>Registro</title>
+</head>
 
 <section>
   <div class="container" style="margin-top:1.5rem;font-size:1.3rem;">
